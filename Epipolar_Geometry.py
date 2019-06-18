@@ -3,8 +3,8 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 
-cap1 = cv2.VideoCapture('/home/trista/PycharmProject/Tracking1/calibration1.mp4')
-cap2 = cv2.VideoCapture('/home/trista/PycharmProject/Tracking1/calibration2.map4')
+cap1 = cv2.VideoCapture('calibration1.mp4')
+cap2 = cv2.VideoCapture('calibration2.map4')
 
 cap1.set(cv2.CAP_PROP_POS_FRAMES, 95)
 ret1, img1 = cap1.read()
