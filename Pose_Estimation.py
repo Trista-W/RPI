@@ -55,7 +55,7 @@ axis1 = np.float32([[3, 0, 0], [0, 3, 0], [0, 0, -3]]).reshape(-1, 3)
 axis2 = np.float32([[3, 0, 0], [0, 3, 0], [0, 0, -3]]).reshape(-1, 3)
 
 # Load video
-images1 = cv2.VideoCapture('/home/trista/PycharmProject/Tracking1/calibration1.mp4')
+images1 = cv2.VideoCapture('calibration1.mp4')
 
 while True:
     ret1, frame1 = images1.read()
@@ -80,7 +80,7 @@ while True:
     else:
         break
 
-images2 = cv2.VideoCapture('/home/trista/PycharmProject/Tracking1/calibration2.mp4')
+images2 = cv2.VideoCapture('calibration2.mp4')
 while True:
     ret2, frame2 = images2.read()
     if ret2:
